@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .item1 {
+            grid-area: header;
+            background-image: url(e39.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item2 {
+            grid-area: menu;
+            background-image: url(23.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item3 {
+            grid-area: main;
+            background-image: url(DSC_3370-1.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item4 {
+            grid-area: right;
+            background-image: url(z.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item5 {
+            grid-area: footer;
+            background-image: url(F90-BMW-M5-M5-Competition-facelift-LCI-33.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-areas:
+                'menu menu  header header header header'
+                'menu menu main main main right'
+                'footer footer footer footer footer right'
+            ;
+           
+            gap: 10px;
+            height: 100%;
+        }
+
+        div {
+            
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+        }
+        .footer{
+            position: fixed;
+            background-color: black;
+            bottom: 0;
+            line-height: 30px;
+            text-align: center;
+            width: 100%;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="footer">Design by Zakir</div>
+    </div>
+</body>
+
+</html>
